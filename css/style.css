@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  user-select: none;
+
+}
+
+main{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+#game-box{
+  width: 90vmin;
+  height: 90vmin;
+  border: 2px solid black;
+  background: linear-gradient(#8fb63a,#4A6218);
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-template-rows: repeat(18,1fr);
+}
+
+.snake-head {
+  background: linear-gradient(#5B3800, #855814); /* Dark Brown to Light Brown */
+  border: 2px solid #3F2800;
+  transform: scale(1.02);
+  border-radius: 9px;
+}
+
+.snake-body {
+  background: #3F2800; /* Darker Brown */
+  border: 0.25vmin solid white;
+  border-radius: 10px;
+}
+
+.food {
+  background: linear-gradient(#5B3800, #855814); /* Similar to snake-head */
+  border: 0.25vmin solid black;
+  border-radius: 4vmin;
+}
+
+
+#score{
+  font-family: 'Knewave', cursive;
+  align-self: flex-start;
+  margin-top: 45px;
+  font-size: 1.5rem;
+  background-color: #4A6218;
+  padding: 10px;
+  border-radius: 12px;
+  color: #fff;
+}
